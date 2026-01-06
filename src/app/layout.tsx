@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import '@zhenyzh/common-ui/style/common/ui'
 import { Nunito } from "next/font/google";
 import Header from "@/widgets/header/header";
 

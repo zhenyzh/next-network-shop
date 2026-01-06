@@ -1,6 +1,6 @@
 'use client';
 
-import {Button, Container, LiveWaveIcon} from '@zhenyzh/common-ui';
+import {Button, Container,} from '@zhenyzh/common-ui/components';
 
 export default function Header() {
     return (
