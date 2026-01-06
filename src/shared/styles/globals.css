@@ -2,6 +2,7 @@
 @import "./variables.css";
 
 * {
+    font-family: Nunito system-ui, sans-serif;
     scrollbar-width: thin;
 }
 

@@ -1,17 +1,10 @@
-import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import type {Metadata} from 'next';
 import '@zhenyzh/common-ui/styles';
-import "@/shared/styles/globals.css";
-import {Header} from "@/widgets/header";
-
-const nunito = Nunito({
-  subsets: ["cyrillic"],
-  variable: "--font-nunito",
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
+import '@/shared/styles/globals.css';
+import {Header} from '@/widgets/header';
 
 export const metadata: Metadata = {
-  title: "Next network shop",
+  title: 'Next network shop',
 };
 
 export default function RootLayout({
@@ -20,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={nunito.variable}>
+    <html lang='en'>
+      <body>
         <Header />
         <main>{children}</main>
       </body>
