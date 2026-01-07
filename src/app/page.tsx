@@ -2,7 +2,7 @@
 
 import {Card, Container, Typography} from '@zhenyzh/common-ui/components';
 import {Categories} from '@/shared/ui/categories/categories';
-import {TopBar} from '@/shared/ui/top-bar/top-bar';
+import {TopBar} from '@/shared/ui/topBar/topBar';
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import s from './top-bar.module.css';
+import s from './topBar.module.css';
 import {Container} from '@zhenyzh/common-ui/components';
 
 export type TopBarProps = {
