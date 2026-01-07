@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import '@zhenyzh/common-ui/styles';
-import '@/shared/styles/globals.css';
+import '@/app/styles/globals.css';
 import {Header} from '@/widgets/header';
 
 export const metadata: Metadata = {

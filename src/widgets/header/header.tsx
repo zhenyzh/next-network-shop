@@ -10,7 +10,7 @@ export function Header() {
     <Container className={s.container}>
       <Card>
         <Typography variant='h1'>Next pizza</Typography>
-        <Typography variant='h2' className={s.description}>
+        <Typography variant='h3' className={s.description}>
           Вкусно и точка
         </Typography>
       </Card>

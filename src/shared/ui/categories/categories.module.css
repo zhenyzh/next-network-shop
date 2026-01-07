@@ -1,0 +1,18 @@
+.container {
+    display: inline-flex;
+    background-color: var(--color-text-primary);
+    padding: 1px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.containerData {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.active {
+    color: var(--color-accent);
+}
