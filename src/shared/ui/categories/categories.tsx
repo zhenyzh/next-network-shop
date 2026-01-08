@@ -6,15 +6,13 @@ import s from './categories.module.css';
 
 export type CategoriesProps<T> = {
   data: T[];
-  classNames?: string;
 } & ComponentProps<'div'>;
 
 const activeIndex = 0;
 
-export const Categories = <T,>({data, classNames}: CategoriesProps<T>) => {
-  const className = clsx(s.container, classNames);
+export const Categories = <T,>({data, className}: CategoriesProps<T>) => {
   return (
-    <div className={className}>
+    <div className={clsx(s.container, className)}>
       {data.map((item, index) => (
         <a key={index} className={clsx(s.container)}>
           <Button

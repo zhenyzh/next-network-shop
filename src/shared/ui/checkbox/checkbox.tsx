@@ -3,7 +3,6 @@ import s from './checkbox.module.css';
 
 export type CheckboxProps = {
   label?: string;
-  className?: string;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
 export const CheckBox = ({label, className, ...props}: CheckboxProps) => {

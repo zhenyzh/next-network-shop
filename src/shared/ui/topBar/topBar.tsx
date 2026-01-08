@@ -1,16 +1,15 @@
 import clsx from 'clsx';
 import s from './topBar.module.css';
 import {Container} from '@zhenyzh/common-ui/components';
+import type {ComponentProps} from 'react';
 
 export type TopBarProps = {
-  classNames?: string;
   children?: React.ReactNode;
-};
+} & ComponentProps<'div'>;
 
-export const TopBar = ({classNames, children}: TopBarProps) => {
-  const className = clsx(s.wrapper, classNames);
+export const TopBar = ({className, children}: TopBarProps) => {
   return (
-    <div className={className}>
+    <div className={clsx(s.wrapper, className)}>
       <Container className={clsx(s.container)}>{children}</Container>
     </div>
   );
