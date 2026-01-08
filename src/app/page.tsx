@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Container>
         <Card>
-          <Typography variant='h2'>Все пиццы</Typography>
+          <Typography variant='h1'>Все пиццы</Typography>
         </Card>
       </Container>
       <TopBar>

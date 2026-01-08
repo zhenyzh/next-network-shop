@@ -4,14 +4,14 @@ import {Button} from '@zhenyzh/common-ui/components';
 
 import s from './categories.module.css';
 
-export type CategoriesProps = {
-  data: string[];
+export type CategoriesProps<T> = {
+  data: T[];
   classNames?: string;
 } & ComponentProps<'div'>;
 
 const activeIndex = 0;
 
-export const Categories = ({data, classNames}: CategoriesProps) => {
+export const Categories = <T,>({data, classNames}: CategoriesProps<T>) => {
   const className = clsx(s.container, classNames);
   return (
     <div className={className}>
@@ -21,7 +21,7 @@ export const Categories = ({data, classNames}: CategoriesProps) => {
             variant='secondary'
             className={clsx(s.containerData, activeIndex === index && s.active)}
           >
-            {item}
+            {String(item)}
           </Button>
         </a>
       ))}
