@@ -3,7 +3,6 @@
 import {Card, Container, Typography} from '@zhenyzh/common-ui/components';
 import {Categories} from '@/shared/ui/categories/categories';
 import {TopBar} from '@/shared/ui/topBar/topBar';
-import {CheckBox} from '@/shared/ui/checkbox/checkbox';
 
 export default function Home() {
   return (
