@@ -1,0 +1,40 @@
+$color-primary: var(--color-bg-primary);
+$color-accent: var(--color-accent);
+$color-text: var(--color-text-primary);
+
+.container {
+  width: 300px;
+  background-color: $color-primary;
+  border: 1px solid $color-accent;
+  border-radius: 15px;
+  padding: 15px;
+  gap: 5px;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 15px;
+  border: 2px solid $color-accent;
+}
+
+.title {
+  color: $color-text;
+}
+
+.cardAction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-accent;
+  border: 1px solid $color-accent;
+  border-radius: 20px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

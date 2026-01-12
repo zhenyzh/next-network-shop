@@ -4,6 +4,7 @@ import {Card, Container, Typography} from '@zhenyzh/common-ui/components';
 import {Categories} from '@/shared/ui/categories/categories';
 import {TopBar} from '@/shared/ui/topBar/topBar';
 import {FilterCard} from '@/features';
+import {ProductCard} from '@/entities';
 
 export default function Home() {
   return (
@@ -20,7 +21,10 @@ export default function Home() {
           />
         </Card>
       </TopBar>
-      <FilterCard />
+      <Container style={{display: 'flex', gap: '100px'}}>
+        <FilterCard />
+        <ProductCard />
+      </Container>
     </>
   );
 }
