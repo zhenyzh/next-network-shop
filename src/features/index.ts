@@ -1,1 +1,1 @@
-export * from './filter-cart/ui/filter-cart';
+export * from '@/features/filter-card/ui/filter-card';

@@ -3,7 +3,7 @@
 import {Card, Container, Typography} from '@zhenyzh/common-ui/components';
 import {Categories} from '@/shared/ui/categories/categories';
 import {TopBar} from '@/shared/ui/topBar/topBar';
-import {FilterCart} from '@/features';
+import {FilterCard} from '@/features';
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
           />
         </Card>
       </TopBar>
-      <FilterCart />
+      <FilterCard />
     </>
   );
 }
